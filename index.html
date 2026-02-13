@@ -1,22 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <script>
-const text = "Nhóm 1 - Giới Thiệu Nhóm 1";
-const title = document.querySelector("h1");
-title.innerHTML = "";
-let i = 0;
-
-function typeEffect(){
-    if(i < text.length){
-        title.innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typeEffect, 70);
-    }
-}
-
-typeEffect();
-</script>
-<head>
+    <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta charset="UTF-8">
     <title>Nhóm 1 - Giới thiệu  thành viên nhóm</title>
@@ -409,6 +393,27 @@ cards.forEach(card => {
     });
 });
 </script>
+ <script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const text = "Nhóm 1 - Giới Thiệu Nhóm 1";
+    const title = document.querySelector("h1");
+    title.innerHTML = "";
+    let i = 0;
+
+    function typeEffect(){
+        if(i < text.length){
+            title.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeEffect, 70);
+        }
+    }
+
+    typeEffect();
+
+});
+</script>
 
 </body>
 </html>
+
